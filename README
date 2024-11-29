@@ -14,4 +14,22 @@ pip list  ###just to check installed dependencies
 python3 app.py  ## to run the code
 
 
+Setting things on Ec2
+
+sudo yum update -y          ###installing Git ###For Amazon Linux
+sudo yum install git -y
+
+git --version   #### to check git version
+
+## How to run using docker 
+1. docker build
+```
+ docker build -t flask-app .
+ ```
+
+ 2. docker run
+
+
+ 
+
 
