@@ -1,0 +1,49 @@
+# Python bytecode
+*.pyc
+*.pyo
+__pycache__/
+
+# Virtual environment
+.env/
+.venv/
+
+# Environment variables
+.env
+
+# Flask instance folder
+instance/
+
+# Cache and log files
+*.log
+*.pot
+.cache/
+
+# Database files
+*.sqlite3
+*.db
+
+# Static files generated during runtime
+staticfiles/
+mediafiles/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# IDE-specific files
+.vscode/
+.idea/
+*.swp
+
+# MacOS-specific files
+.DS_Store
+
+# Temporary files and folders
+*.bak
+*.tmp
+*.old
+*.orig
+*.cover
+*.swp
+*.swo
+*.err
+*.rej
