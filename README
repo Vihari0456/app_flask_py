@@ -30,6 +30,46 @@ git --version   #### to check git version
  2. docker run
 
 
+ ### How to host on Ec2
+ 
+ 1. # Update the package manager
+sudo yum update -y
+
+2. # Install Git
+sudo yum install git -y
+
+3. # Install Docker
+sudo dnf install docker -y
+4. # Enable Docker service on boot
+sudo systemctl enable docker
+
+5. # Add current user to the Docker group
+sudo groupadd docker
+sudo usermod -aG docker ec2-user
+
+6. # Reboot your instance for group changes to take effect 
+sudo reboot
+
+
+7. #if you are trying to clone from Git
+ git clone https://github.com/username/Repo.git
+
+8. Build and Run the Docker Container
+cd app_flask_py
+
+9. creating an image on ec2 terminal 
+docker build -t flask-app .
+
+10. running the container trying to hit on port 5000
+docker run -d -p 5000:5000 flask-app
+
+11. Access your app
+http://<EC2_PUBLIC_IP>:5000
+
+
+
+
+
  
 
 
